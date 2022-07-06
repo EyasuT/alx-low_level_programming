@@ -16,15 +16,18 @@ int main(void)
 	{
 		if (j != 20365011074)
 		{
-			printf("%ld, ", j);
+			printf("%ld",  j);
 		}
 		else
 		{
 			printf("%ld\n", j);
-			j = k;
-			k = next;
+
 		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
+
 	return (0);
 }
 
