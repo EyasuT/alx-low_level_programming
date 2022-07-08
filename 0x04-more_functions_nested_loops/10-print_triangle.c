@@ -6,14 +6,14 @@
  */
 void print_triangle(int size)
 {
-	int = 1, ii;
+	int i = 1, ii;
 
 	while (i <= size && size > 0)
 	{
 		ii = 0;
 		while (ii < size - i)
 		{
-			_putchar('');
+			_putchar(' ');
 			ii++;
 		}
 		ii = 0;
