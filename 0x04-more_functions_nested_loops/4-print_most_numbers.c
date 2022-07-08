@@ -3,7 +3,6 @@
 /**
  * print_most_numbers - this prints most numbers
  */
-
 void print_most_numbers(void)
 {
 	int X;
@@ -13,5 +12,5 @@ void print_most_numbers(void)
 		if (X != 0 && X != 4)
 			_putchar(X + '0');
 	}
-	_putchar( '\n' );
+	_putchar('\n');
 }
