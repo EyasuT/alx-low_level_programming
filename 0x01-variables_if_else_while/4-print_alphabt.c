@@ -1,20 +1,19 @@
-#include <stdio.h>                                                                                                                      
-
-/**                                                                                                                                     
-*assign a random number to the variable n each time it is executed                                                                  
-*and print the last digit of the number stored in the variable n  
-*Return : always 0
-*/                                                                                                                   
+#include <stdio.h>
+/**
+* main : Prints the alphabet in lowercase
+* followed by a new line, except q and e
+* Return: always 0 (sucess)
+*/
 int main(void)
 {
-	char(ch);
+	char (ch);
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (ch != 'q' && ch != 'e')
 		{
-			putchar(ch);
+			putchar (ch);
 		}
 	}
-	putchar(10); /* this is the ASCII code for new line */
+	putchar (10);
 	return (0);
-}	
+}
