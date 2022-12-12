@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - prints combination of three digit
-* Return: always 0 
+* Return: always 0
 */
 
 int main(void)
@@ -29,14 +29,14 @@ int main(void)
 						break;
 					}
 
-					
+
 						putchar(',');
 						putchar(',');
 				}
 			}
 			}
 		}
-	}	
+	}
 	putchar(10); /*this is an ASCII code*/
 	return (0);
 }
