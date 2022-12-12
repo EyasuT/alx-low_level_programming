@@ -1,19 +1,17 @@
 #include <stdio.h>
 /**
-* main : Prints the alphabet without q and e.
-* Return: Always 0
-*/
+ * main - Entry point
+ * Return: Always 0
+ */
 int main(void)
 {
-	char i;
+	char c;
 
-	for (i = 97; i <= 123; i++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (i != 101 && ch != 113)
-		{
-			putchar (i);
-		}
+		if (c != 'e' && c != 'q')
+			putchar(c);
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
