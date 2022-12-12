@@ -6,31 +6,37 @@
 
 int main(void)
 {
-	int ch;
+	int i;
 	int n;
-	int m;
+	int j;
 
-	for (ch = 48; ch <= 57; ch++)
+	for (i = 48; i <= 58; i++)
 	{
-		for (n = 49; n <= 57; n++)
+		for (n = 48; n <= 58; n++)
 		{
-			for (n = 50; m <= 57; n++)
+			if (n > i)
 			{
-				if (n > ch && m > n)
-				{
-					putchar (ch);
-					putchar (n);
-					putchar (m);
-					if (ch != 55 || n != 56 || m!= 57)
 
+			for (j = 48; j < 58; j++)
+			{
+				if (j > n)
+				{
+					putchar (i);
+					putchar (n);
+					putchar (j);
+					if (i == 55 && n == 56 && j == 57)
 					{
-						putchar(44);
-						putchar(32);
+						break;
 					}
+
+					
+						putchar(',');
+						putchar(',');
 				}
 			}
+			}
 		}
-	}
+	}	
 	putchar(10); /*this is an ASCII code*/
 	return (0);
 }
