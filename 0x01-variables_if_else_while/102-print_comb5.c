@@ -5,18 +5,22 @@
  */
 int main(void)
 {
-	int ch;
-	int n;
+	int i;
+	int j;
 
-	for (ch = 48; ch <= 57; ch++)
+	for (i = 0; i < 100; i++)
 	{
-		for (n = 48; n <= 57; n++)
+		for (j = 0; j < 100; j++)
 		{
-			if (n > ch)
+			if (j > i)
 			{
-				putchar(ch);
-				putchar(n);
-				if (ch != 57 || n != 57)
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
+
+				if (i * 100 + j != 9899)
 				{
 					putchar(',');
 					putchar(' ');
