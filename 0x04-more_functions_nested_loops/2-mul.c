@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
- * mul -> multiplying 2 numbers
- * @a: intiger param 1
- * @b: intiger param 2
- * Return: success and intiger
+ * mul - a function that multiplies two integers
+ * @a: first input
+ * @b: second input
+ * Return: multiplication result of the 2 inputs
  */
-
 int mul(int a, int b)
 {
 	return (a * b);
 }
-
