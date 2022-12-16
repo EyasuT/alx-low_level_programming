@@ -1,13 +1,16 @@
 #include "main.h"
+
 /**
- * print_numbers -> print numbers
+ * print_numbers - a function that prints the numbers, from 0 to 9
+ * Return: 0-9 followed by new line
  */
-
-void print_numbers(void)
+void print_numbers(void);
 {
-	int X;
+	int i;
 
-	for (X = 0; X < 10; X++)
-		_putchar(X + '0');
-	_putchar('\n');
+	for (i = 0; i <= 9; i++)
+	
+		_putchar(i + '0');
+		_putchar('\n');
+	
 }
