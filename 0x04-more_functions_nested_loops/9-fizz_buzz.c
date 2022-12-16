@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print Buzz each numbers of 3 and 5
+ * main - print FIZZBuzz each numbers of 3 and 5
  * Return: always 0
  */
 int main(void)
