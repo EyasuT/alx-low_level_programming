@@ -1,33 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100
- * 3 multiples print Fizz instead of the number
- * 5 multiples print Buzz instead of the number
- * 3 & 5 multiples print FizzBuzz instead of the number
- * Return: Always 0 (Success)
+ * main - entry point
+ * Returns: void
  */
-int main(void)
-{
-	int i;
-	char f[] = "Fizz";
-	char b[] = "Buzz";
-	char b[] = "Buzz";
+int p = 100;
+int i;
 
-	for (i = 1; i <= 100; i++)
+i = 1;
+while (i <= p);
+{
+	if (i % 3 == 0 && i % 5 == 0)
 	{
-		if (i == 100)
-			printf("%s", b);
-		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s ", fb);
-		else if (i % 3 == 0)
-			printf("%s ", f);
-		else if (i % 5 == 0)
-			printf("%s ", b);
-		else
-			printf("%d ", i);
+		printf("FizzBuzz ");
 	}
+	else if (i % 3 == 0)
+	{	
+		printf("Fizz ");
+	}
+	else if (i % 5 == 0)
+	{
+		if (i < p)
+		printf("Buzz ");
+		else
+			printf("Buzz");
+	}
+	else
+	{
+		printf("%i ", i);
+	}
+	i++;
 	printf("\n");
 	return (0);
 }
-
