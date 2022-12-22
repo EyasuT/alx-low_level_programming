@@ -1,11 +1,28 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: char to be printed
- * Return: 1 on Success
+ * _strcat - concatennates two strings
+ * @dest: copy to
+ * @src: copy from
+ * Return: pointer to dest
  */
-int _putchar(char c)
+char *_strcat(char *dest, char *src)
 {
-	return ((1, &c, 1));
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
